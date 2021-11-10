@@ -8,10 +8,8 @@
 import UIKit
 
 enum ListScreenModel: Int, CaseIterable {
-    case userAvatar = 0
+    case userAvatar
     case userName
     case userEmail
     case userDescription
-    
-    
 }

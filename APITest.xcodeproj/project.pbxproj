@@ -30,7 +30,6 @@
 		52AB854B272EAEE00019EA9A /* MainScreenViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8549272EAEE00019EA9A /* MainScreenViewCell.swift */; };
 		52AB854C272EAEE00019EA9A /* MainScreenViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AB854A272EAEE00019EA9A /* MainScreenViewCell.xib */; };
 		52AB8552272EB4320019EA9A /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8551272EB4310019EA9A /* UICollectionView+Extension.swift */; };
-		52AB8556272EB4830019EA9A /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8555272EB4830019EA9A /* MainScreenModel.swift */; };
 		52AB8562272FFFE60019EA9A /* UserAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8560272FFFE60019EA9A /* UserAvatarTableViewCell.swift */; };
 		52AB8563272FFFE60019EA9A /* UserAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52AB8561272FFFE60019EA9A /* UserAvatarTableViewCell.xib */; };
 		52AB856B273001040019EA9A /* UserInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AB8569273001040019EA9A /* UserInfoTableViewCell.swift */; };
@@ -66,7 +65,6 @@
 		52AB8549272EAEE00019EA9A /* MainScreenViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewCell.swift; sourceTree = "<group>"; };
 		52AB854A272EAEE00019EA9A /* MainScreenViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainScreenViewCell.xib; sourceTree = "<group>"; };
 		52AB8551272EB4310019EA9A /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
-		52AB8555272EB4830019EA9A /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
 		52AB8560272FFFE60019EA9A /* UserAvatarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAvatarTableViewCell.swift; sourceTree = "<group>"; };
 		52AB8561272FFFE60019EA9A /* UserAvatarTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAvatarTableViewCell.xib; sourceTree = "<group>"; };
 		52AB8569273001040019EA9A /* UserInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 		52AB850E272D519F0019EA9A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				52AB8555272EB4830019EA9A /* MainScreenModel.swift */,
 				52AB8571273007160019EA9A /* ListScreenModel.swift */,
 				527653772734039500239122 /* UsersModel.swift */,
 			);
@@ -417,7 +414,6 @@
 				52AB8544272D5DC90019EA9A /* UIStroryboard+Extension.swift in Sources */,
 				52AB853E272D5B8B0019EA9A /* ListViewModel.swift in Sources */,
 				52AB8518272D57CB0019EA9A /* AuthNetwork.swift in Sources */,
-				52AB8556272EB4830019EA9A /* MainScreenModel.swift in Sources */,
 				52AB8552272EB4320019EA9A /* UICollectionView+Extension.swift in Sources */,
 				527653752733FD4600239122 /* AuthDataFetcher.swift in Sources */,
 				52AB856F273002020019EA9A /* UITableView+extension.swift in Sources */,

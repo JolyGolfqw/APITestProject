@@ -9,6 +9,7 @@ import UIKit
 
 class UserInfoTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var infoLabel: UILabel!
     

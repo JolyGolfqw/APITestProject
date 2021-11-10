@@ -9,6 +9,7 @@ import UIKit
 
 class MainScreenViewCell: UICollectionViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var iconImage: UIImageView!

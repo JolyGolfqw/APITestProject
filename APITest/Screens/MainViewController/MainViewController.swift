@@ -12,7 +12,7 @@ final class MainViewController: UIViewController {
     
     let authDataFetcher = AuthDataFetcher()
     var usersModel = [UsersModel]()
-   
+    
     
     // MARK: - UI
     private let collectionView: UICollectionView = {
@@ -48,6 +48,7 @@ final class MainViewController: UIViewController {
     }
 }
 
+// MARK: - Setup
 extension MainViewController {
     
     func setup() {
@@ -74,7 +75,7 @@ extension MainViewController {
     func getData() {
         let urlString = "https://jsonplaceholder.typicode.com/users"
         self.authDataFetcher.fetchData(urlString: urlString) { (result) in
-        
+            
             DispatchQueue.main.async {
                 self.usersModel = result
                 self.collectionView.reloadData()
@@ -91,17 +92,13 @@ extension MainViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeue(MainScreenViewCell.self, indexPath: indexPath)
-       // let item = MainScreenModel(rawValue: indexPath.row)
-        
-        
-        
+   
         let users = usersModel[indexPath.row]
         cell.titleLabel.text = "\(users.id)"
         cell.infoLabel.text = users.email
         cell.moreDetailsLabel.text = users.name
         
         return cell
-     
     }
 }
 

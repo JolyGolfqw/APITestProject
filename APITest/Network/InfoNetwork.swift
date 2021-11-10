@@ -7,6 +7,5 @@
 
 import Foundation
 
-final class InfoNetwork {
-    
-}
+// TODO
+final class InfoNetwork {}

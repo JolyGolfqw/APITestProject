@@ -17,8 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        
-        
         if UserDefaults.isFirstLaunch() {
             let onboardViewController = UIStoryboard.get(OnboardViewController.self)
             self.rootNavigationController = UINavigationController(rootViewController: onboardViewController)

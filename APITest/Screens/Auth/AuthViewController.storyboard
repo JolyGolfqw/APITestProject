@@ -33,11 +33,14 @@
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="APb-lY-6dR">
                                 <rect key="frame" x="20" y="518" width="374" height="55"/>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="dwU-Vg-41M"/>
                                 </constraints>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="Войти">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goToMainVC:" destination="1Nv-jH-QN5" eventType="touchUpInside" id="IWL-Ql-iv5"/>
                                 </connections>
@@ -62,6 +65,7 @@
                     </view>
                     <connections>
                         <outlet property="activityIndicator" destination="0A4-X6-YeM" id="xP3-MU-PQV"/>
+                        <outlet property="loginButtonOutlet" destination="APb-lY-6dR" id="vCk-H3-Kss"/>
                         <outlet property="loginTextField" destination="KBc-Ag-H7a" id="w2l-en-B5E"/>
                         <outlet property="passwordTextField" destination="LfQ-Zm-Bti" id="Dxg-1L-Qxz"/>
                     </connections>
@@ -77,6 +81,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

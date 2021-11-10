@@ -19,6 +19,7 @@ final class ListViewController: UIViewController {
         setupUIViews()
     }
     
+    // MARK: - UI
     private let tableView: UITableView = {
         let tableView = UITableView()
         
@@ -28,7 +29,6 @@ final class ListViewController: UIViewController {
         tableView.separatorStyle = .none
         return tableView
     }()
-    
     
     func setupUIViews() {
         tableView.delegate = self
@@ -41,20 +41,9 @@ final class ListViewController: UIViewController {
             $0.height.equalToSuperview()
         }
     }
-    
-    
-//    func getData() {
-//        let urlString = "https://jsonplaceholder.typicode.com/users"
-//        self.authDataFetcher.fetchData(urlString: urlString) { (result) in
-//
-//            DispatchQueue.main.async {
-//                self.usersModel = result
-//                self.collectionView.reloadData()
-//            }
-//        }
-//    }
 }
 
+// MARK: - UITableViewDelegate
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return ListScreenModel.allCases.count
@@ -81,18 +70,10 @@ extension ListViewController: UITableViewDelegate {
             return userInfoCell
         default: return userAvatarCell
         }
-        //let item = ListScreenModel(rawValue: indexPath.row)
-        
-//        switch item {
-//        case .userAvatar:
-//            return userAvatarCell
-//        default:
-//            userInfoCell.infoLabel.text = item?.title
-//            return userInfoCell
-//        }
     }
 }
 
+// MARK: - UITableViewDataSource
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

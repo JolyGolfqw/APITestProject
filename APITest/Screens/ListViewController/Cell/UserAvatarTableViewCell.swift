@@ -9,6 +9,7 @@ import UIKit
 
 class UserAvatarTableViewCell: UITableViewCell {
 
+    // MARK: - IBOutlets
     @IBOutlet weak var wrapperView: UIView!
     @IBOutlet weak var avataImage: UIImageView!
     

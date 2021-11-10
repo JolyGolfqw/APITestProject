@@ -16,9 +16,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ЭКРАН ПРИВЕТСТВИЯ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdn-SD-q4s">
+                                <rect key="frame" x="80" y="434.5" width="254" height="27.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ca7-RL-dbs">
-                                <rect key="frame" x="184" y="433" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="109" y="537" width="197" height="48"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="8F3-wT-lDN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <state key="normal" title="ПОГНАЛИ!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="goToAuth:" destination="M53-IP-X2d" eventType="touchUpInside" id="8I9-sg-H9w"/>
                                 </connections>
@@ -27,19 +40,28 @@
                         <viewLayoutGuide key="safeArea" id="z5j-od-Ure"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ca7-RL-dbs" firstAttribute="centerX" secondItem="OYa-Dy-fK1" secondAttribute="centerX" id="XvW-6W-WTg"/>
-                            <constraint firstItem="Ca7-RL-dbs" firstAttribute="centerY" secondItem="OYa-Dy-fK1" secondAttribute="centerY" id="cJR-tt-MgI"/>
+                            <constraint firstItem="Ca7-RL-dbs" firstAttribute="leading" secondItem="z5j-od-Ure" secondAttribute="leading" constant="109" id="27X-jD-V5J"/>
+                            <constraint firstItem="z5j-od-Ure" firstAttribute="trailing" secondItem="Ca7-RL-dbs" secondAttribute="trailing" constant="108" id="A3x-Qr-U3e"/>
+                            <constraint firstItem="Ca7-RL-dbs" firstAttribute="top" secondItem="Cdn-SD-q4s" secondAttribute="bottom" constant="75" id="I4K-mk-BvS"/>
+                            <constraint firstItem="Cdn-SD-q4s" firstAttribute="centerX" secondItem="OYa-Dy-fK1" secondAttribute="centerX" id="Vvs-4z-iW4"/>
+                            <constraint firstItem="Cdn-SD-q4s" firstAttribute="centerY" secondItem="OYa-Dy-fK1" secondAttribute="centerY" id="XgW-bm-TSX"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="goButtonOutlet" destination="Ca7-RL-dbs" id="XZq-Lm-oNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yaC-Tt-lyM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="-106"/>
+            <point key="canvasLocation" x="-71.014492753623188" y="-106.47321428571428"/>
         </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

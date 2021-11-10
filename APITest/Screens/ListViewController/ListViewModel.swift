@@ -7,6 +7,5 @@
 
 import Foundation
 
-final class ListViewModel {
-    
-}
+// TODO
+final class ListViewModel {}

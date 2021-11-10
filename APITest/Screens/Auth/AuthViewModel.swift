@@ -7,6 +7,5 @@
 
 import Foundation
 
-final class AuthViewModel {
-    
-}
+// TODO
+final class AuthViewModel {}
